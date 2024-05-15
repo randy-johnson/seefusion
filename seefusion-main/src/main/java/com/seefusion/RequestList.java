@@ -19,9 +19,9 @@ class RequestList extends SeeTask implements Subject<RequestList>, Cloneable {
 
 	Map<String, RequestInfo> currentRequests = new LinkedHashMap<String, RequestInfo>();
 
-	private List<RequestInfo> recentPages = new LinkedList<RequestInfo>();
+	private LinkedList<RequestInfo> recentPages = new LinkedList<RequestInfo>();
 
-	private List<RequestInfo> recentSlowPages = new LinkedList<RequestInfo>();
+	private LinkedList<RequestInfo> recentSlowPages = new LinkedList<RequestInfo>();
 
 	private SuffixList historyIgnoreSuffixList;
 
@@ -81,7 +81,7 @@ class RequestList extends SeeTask implements Subject<RequestList>, Cloneable {
 	 * @see com.seefusion.RequestList#getRecentRequests()
 	 * @returns LinkedList of RequestInfo
 	 */
-	public List<RequestInfo> getRecentRequests() {
+	public LinkedList<RequestInfo> getRecentRequests() {
 		// log("SeeFusion Classloader: " +
 		// this.getClass().getClassLoader().toString());
 		synchronized (this.currentRequests) {
@@ -98,7 +98,7 @@ class RequestList extends SeeTask implements Subject<RequestList>, Cloneable {
 	 * @see com.seefusion.RequestList#getSlowRequests()
 	 * @returns List of RequestInfo
 	 */
-	public List<RequestInfo> getSlowRequests() {
+	public LinkedList<RequestInfo> getSlowRequests() {
 		synchronized (this.currentRequests) {
 			return new LinkedList<RequestInfo>(this.recentSlowPages);
 		}

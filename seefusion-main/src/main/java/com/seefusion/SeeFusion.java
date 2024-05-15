@@ -129,7 +129,6 @@ public final class SeeFusion implements Observer<Config> {
 	static SeeFusion getInstance(String configDir) {
 		if(instance==null) {
 			synchronized (SeeFusion.class) {
-				// double checked locking.  So sue me.
 				if(instance==null) {
 					instance = new SeeFusion(configDir);
 				}

@@ -21,10 +21,16 @@ public class InstallationFinder {
 			,new Cf10Installation("/coldfusion11")
 			,new Cf10Installation("/coldfusion12")
 			,new Cf10Installation("/ColdFusion2016")
+			,new Cf10Installation("/ColdFusion2018")
+			,new Cf10Installation("/ColdFusion2021")
+			,new Cf10Installation("/ColdFusion2023")
 			,new Cf10Installation("/opt/coldfusion10")
 			,new Cf10Installation("/opt/coldfusion11")
 			,new Cf10Installation("/opt/coldfusion12")
 			,new Cf10Installation("/opt/ColdFusion2016")
+			,new Cf10Installation("/opt/ColdFusion2018")
+			,new Cf10Installation("/opt/ColdFusion2021")
+			,new Cf10Installation("/opt/ColdFusion2023")
 			,new Cf10Installation("/usr/local/tomcat7")
 	};
 	
