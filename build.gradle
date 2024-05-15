@@ -1,6 +1,6 @@
 
 apply plugin: 'java'
-project.version = '5.6.FINAL'
+project.version = '5.6.1.FINAL'
 
 allprojects {
     group = 'net.darylb.seefusion'
