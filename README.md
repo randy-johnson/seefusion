@@ -29,7 +29,7 @@ SeeFusion collects its data though two methods; first, a Java-standard "servlet 
 
 ## Downloading
 
-The latest build is at [https://seefusion.s3.amazonaws.com/seefusion-5.6.FINAL.jar](https://seefusion.s3.amazonaws.com/seefusion-5.6.FINAL.jar)
+The latest build is at [https://seefusion.s3.amazonaws.com/seefusion-5.6.1.FINAL.jar](https://seefusion.s3.amazonaws.com/seefusion-5.6.1.FINAL.jar)
 
 ## Adding SeeFusion to your Tomcat-based app
 
